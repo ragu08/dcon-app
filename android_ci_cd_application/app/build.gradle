@@ -3,7 +3,7 @@ plugins {
 }
 
 android {
-    namespace 'com.example.android_ci_cd_application'
+    namespace 'com.example.testing_cicd'
     signingConfigs {
     debug {
         storeFile file("Android_keystore.jks")
@@ -23,7 +23,7 @@ android {
     compileSdk 34
 
     defaultConfig {
-        applicationId "com.example.android_ci_cd_application"
+        applicationId "com.example.testing_cicd"
         minSdk 24
         targetSdk 33
         versionCode 1
