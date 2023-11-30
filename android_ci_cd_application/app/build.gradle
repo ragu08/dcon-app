@@ -7,15 +7,15 @@ android {
     signingConfigs {
     debug {
         storeFile file("Android_keystore.jks")
-        storePassword "keystorePassword"
-        keyAlias "keystoreAlias"
-        keyPassword "keystorePassword"
+        storePassword keystorePassword
+        keyAlias keystoreAlias
+        keyPassword keystorePassword
     }
     release {
         storeFile file("Android_keystore.jks")
-        storePassword "keystorePassword"
-        keyAlias "keystoreAlias"
-        keyPassword "keystorePassword"
+        storePassword keystorePassword
+        keyAlias keystoreAlias
+        keyPassword keystorePassword
         v2SigningEnabled true
         enableV3Signing true
     }
