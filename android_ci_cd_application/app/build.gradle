@@ -33,10 +33,23 @@ android {
     }
 
     buildTypes {
-        release {
+         buildTypes {
+        debug {
+            signingConfig signingConfigs.debug
             minifyEnabled false
+//            minifyEnabled true
+//            debuggable false
+//            shrinkResources true
+//            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        release {
+            signingConfig signingConfigs.release
+            minifyEnabled true
+            debuggable false
+            shrinkResources true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
+    }
     }
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
