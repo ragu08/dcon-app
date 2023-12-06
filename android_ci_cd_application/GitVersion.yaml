@@ -1,0 +1,20 @@
+mode: ContinuousDeployment
+branches:
+ main:
+  mode: ContinuousDeployment
+  tag: '{Major}.{Minor}.{Patch}.{BuildMetaData}'
+ development:
+  mode: ContinuousDeployment
+  tag: 'qa_v{Major}.{Minor}.{Patch}#{BuildMetaData}'
+ feature:
+  increment: Minor
+  tag: ''
+ bugfix:
+  increment: Patch
+  tag: ''
+ hotfix:
+  increment: Patch
+  tag: ''
+ release:
+  mode: ContinuousDeployment
+  tag: 'Release_V{Major}.{Minor}.{Patch}#{BuildMetaData}'

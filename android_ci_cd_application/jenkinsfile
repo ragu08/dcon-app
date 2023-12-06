@@ -1,0 +1,20 @@
+pipeline {
+    agent any
+    
+    stages {
+        
+        stage('branch name') {
+            steps {
+                script {
+                echo "${env.BRANCH_NAME}"
+                
+                sh '''
+                   printenv
+                   
+                   '''
+                
+                }
+            }
+        }
+    }
+}
