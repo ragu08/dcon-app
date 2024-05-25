@@ -1,4 +1,4 @@
-package com.example.testing_cicd;
+package com.example.android_ci_cd_application;
 
 import androidx.appcompat.app.AppCompatActivity;
 
